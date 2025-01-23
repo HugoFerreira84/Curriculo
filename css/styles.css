@@ -1,0 +1,143 @@
+/* Geral */
+body.dark-mode {
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+  }
+  
+  body.dark-mode a {
+    color: #90caf9; /* Links no modo escuro */
+  }
+  
+  body.dark-mode a:hover {
+    color: #42a5f5;
+  }
+  
+  /* Hero no Modo Escuro */
+  body.dark-mode .hero {
+    background: linear-gradient(90deg, #1e88e5, #1565c0); /* Gradiente escuro */
+  }
+  
+  /* Cards no Modo Escuro */
+  body.dark-mode .card {
+    background-color: #1e1e1e; /* Fundo escuro dos cards */
+    color: #e0e0e0; /* Texto claro */
+    box-shadow: none;
+  }
+  
+  body.dark-mode .card:hover {
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Botões no Modo Escuro */
+  body.dark-mode .btn-primary {
+    background-color: #42a5f5;
+    border-color: #42a5f5;
+  }
+  
+  body.dark-mode .btn-primary:hover {
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+  }
+  
+  /* Rodapé no Modo Escuro */
+  body.dark-mode footer {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-mode footer .social-links a {
+    color: #90caf9;
+  }
+  
+  body.dark-mode footer .social-links a:hover {
+    color: #42a5f5;
+  }
+  
+  
+/* Hero */
+.hero {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    padding: 50px 0;
+  }
+  
+  .hero img {
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer .social-links a {
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  /* Contato - Cards */
+#contato .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #contato .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  #contato a {
+    color: #007bff;
+    text-decoration: none;
+    
+  }
+  
+  #contato a:hover {
+    text-decoration: none;
+  }
+
+  /* Currículo para Impressão */
+@media print {
+    body * {
+      visibility: hidden;
+    }
+  
+    #curriculo, #curriculo * {
+      visibility: visible;
+    }
+  
+    #curriculo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background: white;
+      color: black;
+    }
+
+    #curriculo ul>li{
+        list-style: none;
+    }
+  
+    #curriculo img {
+      border-radius: 5px;
+      max-width: 150px;
+    }
+  }
+  
+  
+  

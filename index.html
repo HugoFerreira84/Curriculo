@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Hugo de Leon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Botão de Modo Escuro/Claro -->
+    <button id="theme-toggle" class="btn btn-light btn-sm position-fixed top-0 end-0 m-3 shadow">
+        <i id="theme-icon" class="fas fa-sun"></i>
+    </button>
+
+    <!-- Hero -->
+    <header class="hero d-flex align-items-center text-white">
+        <div class="container text-center text-md-start d-md-flex align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold">Olá, eu sou Hugo!</h1>
+                <p class="lead">Desenvolvedor Web | Técnico em Informática</p>
+                <a href="#contato" class="btn btn-primary btn-lg mt-3">Entre em Contato</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Hugo.jpeg" alt="Foto de Hugo" class="rounded-circle img-fluid shadow-lg" width="250">
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <!-- Sobre Mim -->
+        <section id="sobre-mim" class="mb-5">
+            <h2 class="text-primary text-center mb-4">Sobre Mim</h2>
+            <p class="text-center">
+                Sou um desenvolvedor web apaixonado por criar experiências digitais. Com conhecimentos em
+                linguagens como Java, JavaScript, SQL e ferramentas de desenvolvimento front-end, como, Boostrap, busco
+                sempre melhorar
+                meus projetos e entregar soluções criativas.
+            </p>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="mb-5">
+            <h2 class="text-primary text-center mb-4">Habilidades Técnicas</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h5>Programação</h5>
+                        <p>JavaScript (80%)</p>
+                        <p>Java (75%)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                        <h5>Desenvolvimento Web</h5>
+                        <p>HTML/CSS (85%)</p>
+                        <p>Bootstrap/jQuery (70%)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                        <h5>Banco de Dados</h5>
+                        <p>SQL (80%)</p>
+                        <p>MySQL (75%)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão de Impressão -->
+        <div class="text-center my-4">
+            <button id="print-cv" class="btn btn-dark">
+                <i class="fas fa-print"></i> Imprimir Currículo
+            </button>
+        </div>
+
+        <!-- Currículo para Impressão -->
+        <section id="curriculo" class="container d-none">
+            <div class="row">
+                <div class="col-md-3 text-start">
+                    <img src="img/Hugo.jpeg" alt="Foto de Hugo" class="img-fluid rounded mb-3 w-50 h-80">
+                </div>
+                <div class="col-md-9">
+                    <h1 class="fw-bold">Hugo de Leon da Silva Ferreira</h1>
+                    <p><strong>Endereço:</strong> Rua João Batista de Moraes, 34, Jardim Paraíso. <br> <strong>Cidade:</strong> Itapecerica da Serra -
+                        SP</p>
+                    <p><strong>Contato:</strong> (11) 95959-5831 | <strong>WhatsApp:</strong> (11) 95959-5831</p>
+                    <p><strong>E-mail:</strong> <a
+                            href="mailto:hugodeleondasilva@hotmail.com">hugodeleondasilva@hotmail.com</a></p>
+                </div>
+            </div>
+            <hr>
+            <h5 class="text-primary">Resumo</h5>
+            <p>
+                Profissional com conhecimentos em linguagens de programação (Java, Javascript, SQL, MySQL) e
+                desenvolvimento
+                web (Bootstrap, JQuery, HTML, CSS). Experiência em montagem e manutenção de computadores e redes.
+            </p>
+            <hr>
+            <h5 class="text-primary">Formação Acadêmica</h5>
+            <ul>
+                <li>Gestão em TI, Faculdade Uninove (Conclusão: 07/2025)</li>
+                <li>Técnico em Informática, Escola Senac (Conclusão: 01/2026)</li>
+            </ul>
+            <hr>
+            <h5 class="text-primary">Habilidades Técnicas</h5>
+            <ul>
+                <li>Java, JavaScript</li>
+                <li>MySQL, SQL</li>
+                <li>HTML, CSS, Bootstrap, JQuery</li>
+                <li>Montagem e manutenção de computadores</li>
+                <li>Redes de computadores</li>
+            </ul>
+            <hr>
+            <h5 class="text-primary">Experiência Profissional</h5>
+            <ul>
+                <li>Motoboy, Prefeitura Municipal de Itapecerica da Serra (04/2010 - 11/2024)</li>
+            </ul>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="mb-5">
+            <h2 class="text-primary text-center mb-4">Contato</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                        <h5>Telefone</h5>
+                        <p>(11) 95959-5831</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fab fa-whatsapp fa-3x text-primary mb-3"></i>
+                        <h5>WhatsApp</h5>
+                        <p><a href="https://wa.me/5511959595831" target="_blank">(11) 95959-5831</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow border-0 p-4">
+                        <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                        <h5>E-mail</h5>
+                        <p><a href="mailto:hugodeleondasilva@hotmail.com">hugodeleondasilva@hotmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Hugo de Leon. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/seu-usuario" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://twitter.com/seu-usuario" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <button id="scroll-top" class="btn btn-primary mt-3">Voltar ao Topo</button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
