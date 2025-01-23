@@ -61,8 +61,7 @@ body.dark-mode {
   }
   
   .hero img {
-    border: 5px solid white;
-    border-radius: 50%;
+    border-radius: 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
