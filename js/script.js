@@ -1,24 +1,28 @@
 $(document).ready(function () {
-  // Exibir Currículo em Tela Cheia
-  $('#print-cv').click(function () {
-    $('#curriculo').addClass('show'); // Mostra o currículo em tela cheia
-  });
+    // Alternar Modo Escuro/Claro
+    $('#theme-toggle').click(function () {
+        $('body').toggleClass('dark-mode'); // Adiciona ou remove a classe `dark-mode` no body
+        const icon = $('#theme-icon'); // Seleciona o ícone do botão
+        if ($('body').hasClass('dark-mode')) {
+            icon.removeClass('fa-sun').addClass('fa-moon'); // Modo escuro: ícone de lua
+        } else {
+            icon.removeClass('fa-moon').addClass('fa-sun'); // Modo claro: ícone de sol
+        }
+    });
 
-  // Fechar Visualização do Currículo
-  $('#close-cv').click(function () {
-    $('#curriculo').removeClass('show'); // Oculta o currículo
-  });
+    // Botão de Impressão do Currículo
+    $('#print-cv').click(function () {
+        $('#curriculo').removeClass('d-none'); // Mostra o currículo
+        window.print(); // Aciona a impressão
+        $('#curriculo').addClass('d-none'); // Oculta o currículo novamente
+    });
 
-  // Scroll para o topo
-  $('#scroll-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-    return false;
-  });
-
-  // Alternar Modo Escuro/Claro
-  $('#theme-toggle').click(function () {
-    $('body').toggleClass('dark-mode');
-    const icon = $('#theme-icon');
-    icon.toggleClass('fa-sun fa-moon');
-  });
+    // Scroll para o topo
+    $('#scroll-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
 });
+
+  
+
